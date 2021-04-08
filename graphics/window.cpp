@@ -4,12 +4,18 @@ namespace equinox
 {
     namespace graphics
     {
+        void windowResizeCall(GLFWwindow *window, int width, int height);
+
         Window::Window(const char *name, int width, int height)
         {
             m_name = name;
             m_width = width;
             m_height = height;
-            Init();
+
+            if (!Init())
+            {
+                glfwTerminate();
+            }
         }
         
         Window::~Window()
@@ -18,35 +24,52 @@ namespace equinox
         }
 
         // Private Methods
-        void Window::Init()
+        bool Window::Init()
         {
             if (!glfwInit())
                 {
-                    std::cout << "bad" << std::endl;
+                    std::cout << "Error: !glfwInit()" << std::endl;
+                    return false;
                 } else
                 {
-                    std::cout << "ok" << std::endl;
+                    std::cout << "Initialized Successfully." << std::endl;
                 }
 
             m_display = glfwCreateWindow(m_width, m_height, m_name, NULL, NULL);
             if (!m_display)
             {
-                glfwTerminate();
-                std::cout << "Failed to create glfw window!" << std::endl;
+                // uncomment for debugging. 
+                // glfwTerminate();
+                std::cout << "Error: Failed to create glfw window!" << std::endl;
+                return false;
             }
             glfwMakeContextCurrent(m_display);
+            glfwSetWindowSizeCallback(m_display, windowResizeCall);
+            
+            return true;
         }
 
         // Public Methods
         bool Window::Closed() const
         {
-            glfwWindowShouldClose(m_display);
+            return (glfwWindowShouldClose(m_display) == 1);
         }
         
-        void Window::Update() const
+        void Window::Update() 
         {
-            glfwSwapBuffers(m_display);
             glfwPollEvents();
+            // glfwGetFramebufferSize(m_display, &m_width, &m_height);
+            glfwSwapBuffers(m_display);
+        }
+
+        void Window::Clear() const
+        {
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        }
+
+        void windowResizeCall(GLFWwindow *window, int width, int height)
+        {
+            glViewport(0, 0, width, height);
         }
     } // namespace graphics
     

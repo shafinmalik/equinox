@@ -19,10 +19,15 @@ namespace equinox
             ~Window();
 
             bool Closed() const;
-            void Update() const;
+            void Clear() const;
+
+            void Update();
+
+            inline int getWidth() const { return m_width; };
+            inline int getHeight() const { return m_height; };
 
         private:
-            void Init();
+            bool Init();
         };
     }
 }
