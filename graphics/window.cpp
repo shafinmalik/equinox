@@ -45,7 +45,17 @@ namespace equinox
             }
             glfwMakeContextCurrent(m_display);
             glfwSetWindowSizeCallback(m_display, windowResizeCall);
+
+            // Attempt to Initialize GLEW
+            // This MUST occur after glfwMakeContextCurrent(), otherwise GLEW will automatically fail
+            if (glewInit() != GLEW_OK)
+            {
+                std::cout << "Could not initialize GLEW!" << std::endl;
+                return false;
+            }
             
+            std::cout << "OpenGL " << glGetString(GL_VERSION) << std::endl;
+
             return true;
         }
 
@@ -73,4 +83,4 @@ namespace equinox
         }
     } // namespace graphics
     
-} // namespace equin
+} // namespace equinox

@@ -1,8 +1,11 @@
 // OpenGL Imports
-#include <GLFW/glfw3.h>
+//#include <GLFW/glfw3.h>
 
 // Engine Imports
 #include "graphics/window.h"
+
+// Utility Imports
+#include "utilities/init_ui.h"
 
 // Other Imports
 #include <iostream>
@@ -11,13 +14,16 @@
 // See references for "linmath.h" source
 // Need to refactor directory structure
 // current g++ command:
-// g++ core.cpp graphics/window.cpp -lglfw -lGLU -lGL example
+// g++ core.cpp graphics/window.cpp utilities/init_ui.cpp -lGLEW -lglfw -lGLU -lGL example
 
 using namespace equinox;
 using namespace graphics;
 
 int main() {
-    Window window("Test!", 960, 540);
+    int make_width, make_height;
+    SetNewWindowHeight(make_width, make_height);
+    Window window("Test!", make_width, make_height);
+    //Window window("Test!", 960, 540);
     glClearColor(0.2f, 0.3f, 0.4f, 1.0f);
 
     std::cout << glGetString(GL_VERSION) << std::endl;
