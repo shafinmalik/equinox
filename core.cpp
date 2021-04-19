@@ -28,18 +28,25 @@ int main() {
 
     std::cout << glGetString(GL_VERSION) << std::endl;
 
+    GLuint vao;
+    glGenVertexArrays(1, &vao);
+    glBindVertexArray(vao);
+
     while (!window.Closed())
     {
         // std::cout << window.getWidth() << ", " << window.getHeight() << std::endl;
         window.Clear();
 
         {
+#if 0
             // Use this space to test basic renders
             glBegin(GL_TRIANGLES);
             glVertex2d(-0.5f, -0.5f);
             glVertex2d(0.0f, 0.5f);
             glVertex2d(0.5f, -0.5f);
             glEnd();
+#endif
+            glDrawArrays(GL_ARRAY_BUFFER, 0, 6);
         }
 
         window.Update();
