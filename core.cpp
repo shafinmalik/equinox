@@ -36,17 +36,28 @@ int main() {
     {
         // std::cout << window.getWidth() << ", " << window.getHeight() << std::endl;
         window.Clear();
+        //window.printButtons();
+        if (window.isKeyDown(GLFW_KEY_A))
+        {
+            std::cout << "Button A" << std::endl;
+        }
+
+        if (window.isMButtonDown(GLFW_MOUSE_BUTTON_LEFT))
+        {
+            std::cout << "Mouse Click L" << std::endl;
+        }
 
         {
-#if 0
+#if 1
             // Use this space to test basic renders
             glBegin(GL_TRIANGLES);
             glVertex2d(-0.5f, -0.5f);
             glVertex2d(0.0f, 0.5f);
             glVertex2d(0.5f, -0.5f);
             glEnd();
-#endif
+#else
             glDrawArrays(GL_ARRAY_BUFFER, 0, 6);
+#endif
         }
 
         window.Update();
