@@ -64,6 +64,7 @@ namespace equinox
             glfwSetWindowSizeCallback(m_display, window_resize_call);
             glfwSetKeyCallback(m_display, key_callback);
             glfwSetMouseButtonCallback(m_display, mbutton_callback);
+            glfwSetCursorPosCallback(m_display, cposition_callback);
 
             // Attempt to Initialize GLEW
             // This MUST occur after glfwMakeContextCurrent(), otherwise GLEW will automatically fail
@@ -110,6 +111,12 @@ namespace equinox
             return m_buttons[button];
         }
 
+        void Window::getMousePosition(double& x, double& y)
+        {
+            x = m_xmouse;
+            y = m_ymouse;
+        }
+
         void Window::Clear() const
         {
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -129,6 +136,14 @@ namespace equinox
             Window* winmgr = (Window*) glfwGetWindowUserPointer(window);
             
             winmgr->m_buttons[button] = (action != GLFW_RELEASE);
+        }
+
+        void Window::cposition_callback(GLFWwindow* window, double xpos, double ypos)
+        {
+            Window* winmgr = (Window*) glfwGetWindowUserPointer(window);
+
+            winmgr->m_xmouse = xpos;
+            winmgr->m_ymouse = ypos;
         }
 
 

@@ -34,18 +34,35 @@ int main() {
 
     while (!window.Closed())
     {
-        // std::cout << window.getWidth() << ", " << window.getHeight() << std::endl;
-        window.Clear();
-        //window.printButtons();
-        if (window.isKeyDown(GLFW_KEY_A))
+        double x, y;
+        window.getMousePosition(x, y);
+        std::cout << x << ", " << y << std::endl;
+#if 1
+        // Test inputs here
         {
-            std::cout << "Button A" << std::endl;
-        }
+            window.Clear();
+            //window.printButtons();
+            if (window.isKeyDown(GLFW_KEY_A))
+            {
+                std::cout << "Button A" << std::endl;
+            }
 
-        if (window.isMButtonDown(GLFW_MOUSE_BUTTON_LEFT))
-        {
-            std::cout << "Mouse Click L" << std::endl;
+            if (window.isKeyDown(GLFW_KEY_D))
+            {
+                std::cout << "Button D" << std::endl;
+            }
+
+            if (window.isMButtonDown(GLFW_MOUSE_BUTTON_LEFT))
+            {
+                std::cout << "Mouse Click L" << std::endl;
+            }
+
+            if (window.isMButtonDown(GLFW_MOUSE_BUTTON_RIGHT))
+            {
+                std::cout << "Mouse Click R" << std::endl;
+            }
         }
+#endif
 
         {
 #if 1
