@@ -4,12 +4,15 @@
 // Engine Imports
 #include "graphics/window.h"
 
+// Math imports
+// (Todo)
+
 // Utility Imports
 #include "utilities/init_ui.h"
 
 // Other Imports
 #include <iostream>
-#include "math/linmath.h"
+#include "external/linmath.h"
 
 // See references for "linmath.h" source
 // Need to refactor directory structure
