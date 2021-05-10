@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+
 namespace equinox
 {
     namespace math
@@ -15,7 +17,11 @@ namespace equinox
             vector2& multiply(const vector2& other_vector);
             vector2& divide(const vector2& other_vector);
 
-            
+            friend std::ostream& operator<<(std::ostream& stream, const vector2& vector);
+            friend vector2& operator+(vector2& current, const vector2& other);
+            friend vector2& operator-(vector2& current, const vector2& other);
+            friend vector2& operator*(vector2& current, const vector2& other);
+            friend vector2& operator/(vector2& current, const vector2& other);
         };
         
     } // namespace math

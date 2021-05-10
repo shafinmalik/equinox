@@ -1,6 +1,6 @@
 # OBJS specifies which files to compile as part of the project
 # When adding a new folder, add as <folder/*cpp>
-OBJS = *.cpp graphics/*.cpp utilities/*.cpp
+OBJS = *.cpp graphics/*.cpp utilities/*.cpp math/*.cpp
 
 # CC specifies which compiler we're using
 CC = g++

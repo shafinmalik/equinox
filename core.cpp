@@ -5,14 +5,13 @@
 #include "graphics/window.h"
 
 // Math imports
-// (Todo)
+#include "math/vector2.h"
 
 // Utility Imports
 #include "utilities/init_ui.h"
 
 // Other Imports
 #include <iostream>
-#include "external/linmath.h"
 
 // See references for "linmath.h" source
 // Need to refactor directory structure
@@ -35,11 +34,17 @@ int main() {
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
 
+    math::vector2 newvec(1.0f, 5.0f);
+    math::vector2 lol(1.0f, 2.0f);
+
+    std::cout << newvec + lol << std::endl;
+
     while (!window.Closed())
     {
         double x, y;
-        window.getMousePosition(x, y);
-        std::cout << x << ", " << y << std::endl;
+        //window.getMousePosition(x, y);
+        //std::cout << newvec << std::endl;
+        //std::cout << x << ", " << y << std::endl;
 #if 1
         // Test inputs here
         {
