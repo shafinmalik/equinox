@@ -34,10 +34,10 @@ int main() {
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
 
-    math::vector2 newvec(1.0f, 5.0f);
-    math::vector2 lol(1.0f, 2.0f);
-
-    std::cout << newvec + lol << std::endl;
+    math::vector2 a(1.0f, 5.0f);
+    math::vector2 b(1.0f, 2.0f);
+    a += b;
+    std::cout << a << std::endl;
 
     while (!window.Closed())
     {
