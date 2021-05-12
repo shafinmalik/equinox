@@ -5,7 +5,7 @@
 #include "graphics/window.h"
 
 // Math imports
-#include "math/vector2.h"
+#include "math/math_i.h"
 
 // Utility Imports
 #include "utilities/init_ui.h"
@@ -34,8 +34,8 @@ int main() {
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
 
-    math::vector2 a(1.0f, 5.0f);
-    math::vector2 b(1.0f, 2.0f);
+    math::vector4 a(1.0f, 5.0f, 2.0f, 2.0f);
+    math::vector4 b(1.0f, 2.0f, 3.0f, 7.0f);
     a += b;
     std::cout << a << std::endl;
 

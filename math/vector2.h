@@ -19,10 +19,10 @@ namespace equinox
 
             friend std::ostream& operator<<(std::ostream& stream, const vector2& vector);
             
-            friend vector2& operator+(vector2& current, const vector2& other);
-            friend vector2& operator-(vector2& current, const vector2& other);
-            friend vector2& operator*(vector2& current, const vector2& other);
-            friend vector2& operator/(vector2& current, const vector2& other);
+            friend vector2 operator+(vector2 current, const vector2& other);
+            friend vector2 operator-(vector2 current, const vector2& other);
+            friend vector2 operator*(vector2 current, const vector2& other);
+            friend vector2 operator/(vector2 current, const vector2& other);
 
             vector2& operator+=(const vector2& other);
             vector2& operator-=(const vector2& other);

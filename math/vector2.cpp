@@ -63,22 +63,22 @@ namespace equinox
         }
 
         // Basic math operators
-        vector2& operator+(vector2& current, const vector2& other)
+        vector2 operator+(vector2 current, const vector2& other)
         {
             return current.add(other);
         }
 
-        vector2& operator-(vector2& current, const vector2& other)
+        vector2 operator-(vector2 current, const vector2& other)
         {
             return current.subtract(other);
         }
 
-        vector2& operator*(vector2& current, const vector2& other)
+        vector2 operator*(vector2 current, const vector2& other)
         {
             return current.multiply(other);
         }
 
-        vector2& operator/(vector2& current, const vector2& other)
+        vector2 operator/(vector2 current, const vector2& other)
         {
             return current.divide(other);
         }

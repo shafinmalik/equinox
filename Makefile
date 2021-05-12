@@ -26,6 +26,12 @@ LINKER_FLAGS = -lGLEW -lglfw -lGLU -lGL
 # OBJ_NAME specifies the name of our exectuable
 OBJ_NAME = equinox
 
-#This is the target that compiles our executable
+
+# This is the target that compiles our executable (make)
 all : $(OBJS)
 	$(CC) $(OBJS) $(INCLUDE_PATHS) $(LIBRARY_PATHS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
+
+# make run
+run: $(OBJS)
+	$(CC) $(OBJS) $(INCLUDE_PATHS) $(LIBRARY_PATHS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
+	./equinox
