@@ -115,7 +115,7 @@ namespace equinox
             return truth;
         }
 
-        bool vector2::operator==(const vector2& other)
+        bool vector2::operator!=(const vector2& other)
         {
             // Reuse operator == overload --> adjust if necessary
             bool truth = !(*this == other);
