@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB30F6BC2AE447D20091F073 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB30F6BB2AE447D20091F073 /* Info.plist */; };
+		CB30F6BF2AE447E50091F073 /* equinox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB30F6BD2AE447E50091F073 /* equinox.xcdatamodeld */; };
+		CB30F6C22AE448010091F073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB30F6C02AE448010091F073 /* Main.storyboard */; };
+		CB65A0332AE496FC00860078 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65A0312AE496FC00860078 /* GameView.swift */; };
+		CBEF2AB72AE3A0A7005A1B36 /* equinoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF2AB62AE3A0A7005A1B36 /* equinoxApp.swift */; };
+		CBEF2AB92AE3A0A7005A1B36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF2AB82AE3A0A7005A1B36 /* ContentView.swift */; };
+		CBEF2ABB2AE3A0A8005A1B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEF2ABA2AE3A0A8005A1B36 /* Assets.xcassets */; };
+		CBEF2ABE2AE3A0A8005A1B36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEF2ABD2AE3A0A8005A1B36 /* Preview Assets.xcassets */; };
+		CBEF2AC92AE3A0A9005A1B36 /* equinoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF2AC82AE3A0A9005A1B36 /* equinoxTests.swift */; };
+		CBEF2AD32AE3A0A9005A1B36 /* equinoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF2AD22AE3A0A9005A1B36 /* equinoxUITests.swift */; };
+		CBEF2AD52AE3A0A9005A1B36 /* equinoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF2AD42AE3A0A9005A1B36 /* equinoxUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBEF2AC52AE3A0A9005A1B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEF2AAB2AE3A0A7005A1B36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEF2AB22AE3A0A7005A1B36;
+			remoteInfo = equinox;
+		};
+		CBEF2ACF2AE3A0A9005A1B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEF2AAB2AE3A0A7005A1B36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEF2AB22AE3A0A7005A1B36;
+			remoteInfo = equinox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB30F6BB2AE447D20091F073 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB30F6BE2AE447E50091F073 /* Game_Engine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Game_Engine.xcdatamodel; sourceTree = "<group>"; };
+		CB30F6C12AE448010091F073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB65A0322AE496FC00860078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/GameView.swift; sourceTree = "<group>"; };
+		CBEF2AB32AE3A0A7005A1B36 /* equinox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = equinox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEF2AB62AE3A0A7005A1B36 /* equinoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equinoxApp.swift; sourceTree = "<group>"; };
+		CBEF2AB82AE3A0A7005A1B36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBEF2ABA2AE3A0A8005A1B36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBEF2ABD2AE3A0A8005A1B36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBEF2ABF2AE3A0A8005A1B36 /* equinox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = equinox.entitlements; sourceTree = "<group>"; };
+		CBEF2AC42AE3A0A9005A1B36 /* equinoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = equinoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEF2AC82AE3A0A9005A1B36 /* equinoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equinoxTests.swift; sourceTree = "<group>"; };
+		CBEF2ACE2AE3A0A9005A1B36 /* equinoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = equinoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEF2AD22AE3A0A9005A1B36 /* equinoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equinoxUITests.swift; sourceTree = "<group>"; };
+		CBEF2AD42AE3A0A9005A1B36 /* equinoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equinoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBEF2AB02AE3A0A7005A1B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEF2AC12AE3A0A9005A1B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEF2ACB2AE3A0A9005A1B36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB30F6C32AE448DC0091F073 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CB30F6BB2AE447D20091F073 /* Info.plist */,
+				CB30F6BD2AE447E50091F073 /* equinox.xcdatamodeld */,
+				CBEF2AB82AE3A0A7005A1B36 /* ContentView.swift */,
+				CBEF2ABF2AE3A0A8005A1B36 /* equinox.entitlements */,
+				CBEF2ABA2AE3A0A8005A1B36 /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CBEF2AAA2AE3A0A7005A1B36 = {
+			isa = PBXGroup;
+			children = (
+				CBEF2AB52AE3A0A7005A1B36 /* equinox */,
+				CBEF2AC72AE3A0A9005A1B36 /* equinoxTests */,
+				CBEF2AD12AE3A0A9005A1B36 /* equinoxUITests */,
+				CBEF2AB42AE3A0A7005A1B36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBEF2AB42AE3A0A7005A1B36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBEF2AB32AE3A0A7005A1B36 /* equinox.app */,
+				CBEF2AC42AE3A0A9005A1B36 /* equinoxTests.xctest */,
+				CBEF2ACE2AE3A0A9005A1B36 /* equinoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBEF2AB52AE3A0A7005A1B36 /* equinox */ = {
+			isa = PBXGroup;
+			children = (
+				CB30F6C32AE448DC0091F073 /* Other */,
+				CB30F6C02AE448010091F073 /* Main.storyboard */,
+				CB65A0312AE496FC00860078 /* GameView.swift */,
+				CBEF2AB62AE3A0A7005A1B36 /* equinoxApp.swift */,
+				CBEF2ABC2AE3A0A8005A1B36 /* Preview Content */,
+			);
+			path = equinox;
+			sourceTree = "<group>";
+		};
+		CBEF2ABC2AE3A0A8005A1B36 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CBEF2ABD2AE3A0A8005A1B36 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBEF2AC72AE3A0A9005A1B36 /* equinoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBEF2AC82AE3A0A9005A1B36 /* equinoxTests.swift */,
+			);
+			path = equinoxTests;
+			sourceTree = "<group>";
+		};
+		CBEF2AD12AE3A0A9005A1B36 /* equinoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBEF2AD22AE3A0A9005A1B36 /* equinoxUITests.swift */,
+				CBEF2AD42AE3A0A9005A1B36 /* equinoxUITestsLaunchTests.swift */,
+			);
+			path = equinoxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBEF2AB22AE3A0A7005A1B36 /* equinox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEF2AD82AE3A0A9005A1B36 /* Build configuration list for PBXNativeTarget "equinox" */;
+			buildPhases = (
+				CBEF2AAF2AE3A0A7005A1B36 /* Sources */,
+				CBEF2AB02AE3A0A7005A1B36 /* Frameworks */,
+				CBEF2AB12AE3A0A7005A1B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = equinox;
+			productName = equinox;
+			productReference = CBEF2AB32AE3A0A7005A1B36 /* equinox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBEF2AC32AE3A0A9005A1B36 /* equinoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEF2ADB2AE3A0A9005A1B36 /* Build configuration list for PBXNativeTarget "equinoxTests" */;
+			buildPhases = (
+				CBEF2AC02AE3A0A9005A1B36 /* Sources */,
+				CBEF2AC12AE3A0A9005A1B36 /* Frameworks */,
+				CBEF2AC22AE3A0A9005A1B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEF2AC62AE3A0A9005A1B36 /* PBXTargetDependency */,
+			);
+			name = equinoxTests;
+			productName = equinoxTests;
+			productReference = CBEF2AC42AE3A0A9005A1B36 /* equinoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBEF2ACD2AE3A0A9005A1B36 /* equinoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEF2ADE2AE3A0A9005A1B36 /* Build configuration list for PBXNativeTarget "equinoxUITests" */;
+			buildPhases = (
+				CBEF2ACA2AE3A0A9005A1B36 /* Sources */,
+				CBEF2ACB2AE3A0A9005A1B36 /* Frameworks */,
+				CBEF2ACC2AE3A0A9005A1B36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEF2AD02AE3A0A9005A1B36 /* PBXTargetDependency */,
+			);
+			name = equinoxUITests;
+			productName = equinoxUITests;
+			productReference = CBEF2ACE2AE3A0A9005A1B36 /* equinoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBEF2AAB2AE3A0A7005A1B36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CBEF2AB22AE3A0A7005A1B36 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CBEF2AC32AE3A0A9005A1B36 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CBEF2AB22AE3A0A7005A1B36;
+					};
+					CBEF2ACD2AE3A0A9005A1B36 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CBEF2AB22AE3A0A7005A1B36;
+					};
+				};
+			};
+			buildConfigurationList = CBEF2AAE2AE3A0A7005A1B36 /* Build configuration list for PBXProject "equinox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBEF2AAA2AE3A0A7005A1B36;
+			productRefGroup = CBEF2AB42AE3A0A7005A1B36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBEF2AB22AE3A0A7005A1B36 /* equinox */,
+				CBEF2AC32AE3A0A9005A1B36 /* equinoxTests */,
+				CBEF2ACD2AE3A0A9005A1B36 /* equinoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBEF2AB12AE3A0A7005A1B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB30F6BC2AE447D20091F073 /* Info.plist in Resources */,
+				CB30F6C22AE448010091F073 /* Main.storyboard in Resources */,
+				CBEF2ABE2AE3A0A8005A1B36 /* Preview Assets.xcassets in Resources */,
+				CBEF2ABB2AE3A0A8005A1B36 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEF2AC22AE3A0A9005A1B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEF2ACC2AE3A0A9005A1B36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBEF2AAF2AE3A0A7005A1B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB30F6BF2AE447E50091F073 /* equinox.xcdatamodeld in Sources */,
+				CBEF2AB92AE3A0A7005A1B36 /* ContentView.swift in Sources */,
+				CB65A0332AE496FC00860078 /* GameView.swift in Sources */,
+				CBEF2AB72AE3A0A7005A1B36 /* equinoxApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEF2AC02AE3A0A9005A1B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEF2AC92AE3A0A9005A1B36 /* equinoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEF2ACA2AE3A0A9005A1B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEF2AD52AE3A0A9005A1B36 /* equinoxUITestsLaunchTests.swift in Sources */,
+				CBEF2AD32AE3A0A9005A1B36 /* equinoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBEF2AC62AE3A0A9005A1B36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBEF2AB22AE3A0A7005A1B36 /* equinox */;
+			targetProxy = CBEF2AC52AE3A0A9005A1B36 /* PBXContainerItemProxy */;
+		};
+		CBEF2AD02AE3A0A9005A1B36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBEF2AB22AE3A0A7005A1B36 /* equinox */;
+			targetProxy = CBEF2ACF2AE3A0A9005A1B36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB30F6C02AE448010091F073 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB30F6C12AE448010091F073 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB65A0312AE496FC00860078 /* GameView.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB65A0322AE496FC00860078 /* Base */,
+			);
+			name = GameView.swift;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBEF2AD62AE3A0A9005A1B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBEF2AD72AE3A0A9005A1B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CBEF2AD92AE3A0A9005A1B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = equinox/Other/equinox.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"equinox/Preview Content\"";
+				DEVELOPMENT_TEAM = XPGAAC3RH7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sorajinart.equinox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CBEF2ADA2AE3A0A9005A1B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = equinox/Other/equinox.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"equinox/Preview Content\"";
+				DEVELOPMENT_TEAM = XPGAAC3RH7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sorajinart.equinox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CBEF2ADC2AE3A0A9005A1B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XPGAAC3RH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sorajinart.equinoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/equinox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/equinox";
+			};
+			name = Debug;
+		};
+		CBEF2ADD2AE3A0A9005A1B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XPGAAC3RH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sorajinart.equinoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/equinox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/equinox";
+			};
+			name = Release;
+		};
+		CBEF2ADF2AE3A0A9005A1B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XPGAAC3RH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sorajinart.equinoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = equinox;
+			};
+			name = Debug;
+		};
+		CBEF2AE02AE3A0A9005A1B36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XPGAAC3RH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sorajinart.equinoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = equinox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBEF2AAE2AE3A0A7005A1B36 /* Build configuration list for PBXProject "equinox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEF2AD62AE3A0A9005A1B36 /* Debug */,
+				CBEF2AD72AE3A0A9005A1B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEF2AD82AE3A0A9005A1B36 /* Build configuration list for PBXNativeTarget "equinox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEF2AD92AE3A0A9005A1B36 /* Debug */,
+				CBEF2ADA2AE3A0A9005A1B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEF2ADB2AE3A0A9005A1B36 /* Build configuration list for PBXNativeTarget "equinoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEF2ADC2AE3A0A9005A1B36 /* Debug */,
+				CBEF2ADD2AE3A0A9005A1B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEF2ADE2AE3A0A9005A1B36 /* Build configuration list for PBXNativeTarget "equinoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEF2ADF2AE3A0A9005A1B36 /* Debug */,
+				CBEF2AE02AE3A0A9005A1B36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB30F6BD2AE447E50091F073 /* equinox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB30F6BE2AE447E50091F073 /* Game_Engine.xcdatamodel */,
+			);
+			currentVersion = CB30F6BE2AE447E50091F073 /* Game_Engine.xcdatamodel */;
+			path = equinox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CBEF2AAB2AE3A0A7005A1B36 /* Project object */;
+}
